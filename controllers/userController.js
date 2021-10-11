@@ -8,7 +8,7 @@ var bcrypt = require('bcryptjs');
 const jwt = require("jsonwebtoken");
 
 exports.welcome  = function (req, res) {
-    res.status(200).send("Welcome 🙌 ");
+    res.status(200).send("Welcome in Deqode");
     //res.json('test');
 }
 
