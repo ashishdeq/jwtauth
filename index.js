@@ -15,14 +15,12 @@ mongoose.connect('mongodb://localhost:27017/jwtauth', { useNewUrlParser: true },
     }
 });
 
-// create application/json parser
-// parse application/x-www-form-urlencoded
+
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
-// parse application/json
+// route handling
 app.use('/', routes);
 app.use('/', authroutes);
-//Establish the server connection
 //PORT ENVIRONMENT VARIABLE
 const port = process.env.PORT || 8080;
 console.log('port==',port);
