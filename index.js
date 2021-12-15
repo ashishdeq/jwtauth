@@ -21,6 +21,7 @@ console.log("d1 ");
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 // route handling
+console.log("m2 ");
 app.use('/', routes);
 app.use('/', authroutes);
 //PORT ENVIRONMENT VARIABLE
