@@ -17,6 +17,7 @@ mongoose.connect('mongodb://localhost:27017/jwtauth', { useNewUrlParser: true },
 
 console.log("git demo ");
 console.log("m1 ");
+console.log("d1 ");
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 // route handling
